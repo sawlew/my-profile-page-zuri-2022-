@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <header>
+    <div class="topnav">
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+      <a href="register.html">Register</a>
+      <a href="login.html">Login</a>
+    </div>
+  </header>
+  <body style="color: #330033;">
+    <h2 style="text-align: center">Registration</h2>
+    <table style="margin-left: auto; margin-right: auto; text-align: left;">
+      <form action="">
+        <div class="fname">
+          <tr>
+          <td><label for="text">First Name: </label></td>
+          <td><input type="text" id="name" minlength="2" maxlength="30"/></td>
+          </tr>
+        </div>
+
+        <div class="lname">
+          <tr>
+          <td><label for="text">Last Name: </label></td>
+          <td><input type="text" id="name" minlength="2" maxlength="30"/></td>
+          </tr>
+        </div>
+
+        <div class="tel">
+          <tr>
+          <td><label for="phone">Telephone: </label></td>
+          <td><input type="tel" id="phone" name="phone" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" placeholder="Ex: 0801-234-5678"/></td>
+          </tr>
+        </div>
+
+        <div class="gender">
+          <tr>
+          <td><label for="gender">Name: </label></td>
+          <td>
+            <select name="gender" id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="undeclare">Prefer not to say</option>
+            </select>
+          </td>
+        </tr>
+        </div>
+
+        <div class="country">
+          <tr>
+          <td><label for="text">Country: </label></td>
+          <td><input type="text" id="country"/></td>
+          </tr>
+        </div>
+
+        <div class="state">
+          <tr>
+          <td><label for="text">State/Province: </label></td>
+          <td><input type="text" id="state"/></td>
+          </tr>
+        </div>
+
+        <div>
+          <tr>
+          <td><label for="email">Email: </label></td>
+          <td><input type="email" name="email" id="email"/></td>
+        </tr> 
+        </div>
+
+        <div>
+          <tr>
+            <td><label for="password">Password: </label></td>
+            <td><input type="password" name="password" id="password" minlength="8" required></td>
+            <td>should be at least 8-character long</td>
+          </tr>
+        </div>
+
+        <div>
+          <tr>
+            <td><label for="password">Confirm password: </label></td>
+            <td><input type="password" name="password" id="password" minlength="8" required></td>
+          </tr>
+        </div>
+        
+        <tr>
+          <td></td>
+        <div>
+          <td style="text-align: center;"><input id="button" type="submit" value="Submit"/></td>
+      </tr>
+        </div>
+      </form>
+    </table>
+    <footer></footer>
+  </body>
+</html>
