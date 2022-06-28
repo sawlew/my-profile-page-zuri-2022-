@@ -32,8 +32,8 @@ body {
 .pic {
   float: right;
   width: 30%;
-
   border-radius: 100%;
+  border: 5px #001a4d solid;
 }
 
 .about {
